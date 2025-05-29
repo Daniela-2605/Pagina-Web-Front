@@ -1,0 +1,300 @@
+/* ============================================= */
+/* ESTILOS PARA DETECCIÓN DE FUGAS */
+/* ============================================= */
+
+.leak-detection-container {
+    padding-top: 2rem;
+}
+
+/* Hero Section */
+.leak-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/fugas-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.leak-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.emergency-banner {
+    background-color: #e74c3c;
+    padding: 1rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    animation: pulse 2s infinite;
+    margin-top: 1.5rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Señales de alerta */
+.warning-signs {
+    margin: 4rem 0;
+}
+
+.signs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sign-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.sign-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.sign-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sign-icon.odor {
+    background-color: rgba(231, 76, 60, 0.1);
+    background-image: url('../img/icons/nose.svg');
+}
+
+.sign-icon.sound {
+    background-color: rgba(52, 152, 219, 0.1);
+    background-image: url('../img/icons/sound.svg');
+}
+
+.sign-icon.bubbles {
+    background-color: rgba(46, 204, 113, 0.1);
+    background-image: url('../img/icons/bubbles.svg');
+}
+
+.sign-icon.plants {
+    background-color: rgba(155, 89, 182, 0.1);
+    background-image: url('../img/icons/plant.svg');
+}
+
+.sign-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Proceso de detección */
+.detection-process {
+    margin: 5rem 0;
+    background: rgba(231, 76, 60, 0.05);
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    background: var(--secondary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 0.3rem;
+}
+
+.step-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Equipos de detección */
+.detection-equipment {
+    margin: 5rem 0;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.equipment-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.equipment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.equipment-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.equipment-card h3 {
+    color: var(--primary-color);
+    padding: 1rem 1.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.equipment-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #555;
+}
+
+/* Llamado a la acción */
+.leak-cta {
+    background: var(--primary-color);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.leak-cta h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.leak-cta p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+.cta-button.emergency:hover {
+    background: #c0392b;
+    
+}
+
+.cta-button.secondary {
+    background: #c0392b;
+    color: var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+.cta-button.secondary:hover {
+    background: #f8f9fa;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background: #128C7E;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .leak-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}

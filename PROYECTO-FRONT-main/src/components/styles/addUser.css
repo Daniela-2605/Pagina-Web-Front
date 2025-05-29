@@ -1,0 +1,76 @@
+body {
+    
+    text-align: center;
+    background-color:#c8d2d2; /* Cambia esto al color que desees */
+    color: rgb(0, 0, 0); /* Asegúrate de que el texto sea visible en el nuevo fondo */
+}
+
+.entry {
+    background-color:#f1eee5;
+    border-radius: 10px;
+    padding: 10px 20px 10px 35px;
+}
+
+form {
+    background-color:#91908c;
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(83, 81, 81, 0.945); /* Sombra para profundidad */
+    text-align: center;
+}
+
+label {
+    
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px 0; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #551a1a;
+    
+    
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.btn, #btnEnviar, #btnChangePassword, #btnAddUser {
+    background-color: #006cae; /* Estilo de fondo para todos los botones */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Añadido para separación */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover, #btnEnviar:hover, #btnChangePassword:hover, #btnAddUser:hover {
+    background-color: #d9b6b4; /* Efecto hover para todos los botones */
+}
+
+.txt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#txtBienvenida {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    position: absolute; /* Permite posicionarlo en la esquina inferior derecha */
+    max-width: 80px; /* Ajusta el tamaño del logo */
+    bottom: 10px; /* Espacio desde la parte inferior */
+    right: 10px; /* Espacio desde la derecha */
+    height: auto; /* Mantiene la proporción */
+}

@@ -1,0 +1,104 @@
+/* Elimina o reemplaza estos estilos en tu archivo CSS */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffffff; /* Cambiado a gris claro (Instagram) */
+}
+.container3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 246, 246);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Ancho similar a Instagram */
+    margin: 0 auto;
+    background-color: rgb(181, 24, 24); /* Fondo blanco sólido */
+    border: 1px solid #dbdbdb; /* Borde sutil como Instagram */
+    border-radius: 1px;
+    padding: 20px 40px; /* Padding ajustado */
+    box-shadow: none; /* Eliminamos la sombra */
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Mantén el resto de tus estilos igual */
+.form-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px;
+}
+
+.logo {
+    position: fixed; /* Usamos fixed para que sea relativo al viewport */
+    width: 45px; /* Tamaño ajustado */
+    height: auto;
+    right: 20px; /* 20px desde el borde derecho */
+    bottom: 20px; /* 20px desde el borde inferior */
+    z-index: 10; /* Para asegurar que esté por encima de otros elementos */
+    pointer-events: auto; /* Permite interacción con el logo */
+}
+
+#txtBienvenida {
+    color: #262626; /* Color de texto de Instagram */
+    font-size: 24px;
+    margin: 10px 0 20px;
+    font-weight: 400;
+}
+
+.txt {
+    color: #262626;
+    align-self: flex-start;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.entry {
+    width: 100%;
+    padding: 9px 8px 7px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#btnEnviar {
+    background-color: #0095f6; /* Azul de Instagram */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 16px;
+    font-weight: 600;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#btnAddUser {
+    background: transparent;
+    color: #0095f6;
+    border: none;
+    font-weight: 600;
+    margin: 8px 0;
+    width: 100%;
+}

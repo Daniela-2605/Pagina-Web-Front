@@ -1,0 +1,44 @@
+.table-container {
+    max-height: 401px; /* Define la altura máxima del contenedor para activar el desplazamiento vertical */
+    overflow-y: auto; /* Habilita el desplazamiento vertical solo en el contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    border: 1px solid #ddd; /* Aplica un borde alrededor del contenedor */
+    box-sizing: border-box; /* Incluye el padding y borde dentro del ancho total */
+}
+
+.styled-table {
+    width: 100%; /* Asegura que la tabla ocupe el 100% del contenedor */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas para una apariencia uniforme */
+    font-size: 18px; /* Tamaño de fuente para mejorar la legibilidad */
+    text-align: center; /* Centra el texto en cada celda */
+    table-layout: fixed; /* Distribuye el ancho de las columnas de manera uniforme */
+}
+
+.styled-table th {
+    background-color: #e0e0e0; /* Amarillo característico de la marca */
+    padding: 15px 15px; /* Espaciado interno de cada celda */
+    color: #212121; /* Color oscuro para el texto del encabezado */
+    border: 2px solid #ddd; /* Bordes alrededor de cada celda */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis; /* Puntos suspensivos si el texto es demasiado largo */
+}
+
+.styled-table td {
+    background-color: #FFF8E1; /* Fondo amarillo claro */
+    color: #424242; /* Texto en un tono oscuro */
+    padding: 11px 15px; /* Espaciado interno de cada celda */
+    border: 1px solid #dddddd; /* Bordes alrededor de cada celda */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis; /* Puntos suspensivos si el texto es demasiado largo */
+}
+
+.styled-table thead th {
+    padding: 15px 15px;
+    background-color: #D32F2F; /* Rojo característico de la marca para el encabezado */
+    color: #FFFFFF; /* Texto blanco en el encabezado */
+    position: sticky; /* Encabezados fijos en la parte superior al hacer scroll */
+    border: 1px solid #ddd;
+    top: 0; /* Coloca el encabezado en la parte superior del contenedor */
+    z-index: 1; /* Asegura que el encabezado esté sobre el resto de las filas */
+}
